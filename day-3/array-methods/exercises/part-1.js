@@ -1,4 +1,4 @@
-const { check, runTest, skipTest } = require("../../test-api");
+const { check, runTest, skipTest } = require("../../../test-api");
 
 // For each of these tasks, replace the variable USE_ARRAY_METHOD with the use of an appropriate array method to satisfy the tests
 
