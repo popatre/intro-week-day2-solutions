@@ -2,7 +2,7 @@
 
 Work through the tasks in the following order:
 
-**exercises** -> **questions** -> **challenges**
+**exercises** -> **challenges**
 
 If you finish both the above, research into the following types of loops that you may not have been exposed to yet:
 

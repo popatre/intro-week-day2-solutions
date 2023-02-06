@@ -1,5 +1,4 @@
-const { check, runTest, skipTest } = require("../../../test-api");
-
+const { check, runTest, skipTest } = require("../../test-api/index.js");
 /*
 Instructions
 
@@ -9,6 +8,7 @@ Each of the checks expects the value in the left hand brackets to evaluate to th
 e.g.  check(FILL_ME_IN).isEqualTo(2 + 2) becomes -> check(4).isEqualTo(2 + 2)
 */
 
+// Exercise 1
 runTest("checking multiTypeArray", function () {
   const multiTypeArray = ["I am a string", 42, true, [1, 2, 3]];
 
@@ -18,6 +18,7 @@ runTest("checking multiTypeArray", function () {
   check(FILL_ME_IN).isEqualTo(typeof multiTypeArray[3]);
 });
 
+// Exercise 2
 skipTest("checking alphaSample", function () {
   const alphaSample = ["a", "b", "c"];
   alphaSample.push("d");
@@ -31,6 +32,7 @@ skipTest("checking alphaSample", function () {
   check(FILL_ME_IN).isEqualTo(alphaSample);
 });
 
+// Exercise 3
 skipTest("working with nested arrays", function () {
   const rows = [
     ["a", "b", "c"],
@@ -51,6 +53,7 @@ skipTest("working with nested arrays", function () {
   check(rows[0][FILL_ME_IN]).isEqualTo("c");
 });
 
+// Exercise 4
 skipTest("get the slice of an array", function () {
   const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"];
 
