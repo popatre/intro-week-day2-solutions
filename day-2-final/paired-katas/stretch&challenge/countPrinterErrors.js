@@ -14,10 +14,10 @@ You should return a string representing a rational whose numerator is the number
 
 Example:
 const control = "aaabbbbhaijjjm"
-printer_error(control) should return "0/14"
+countPrinterErrors(control) should return "0/14"
 
 const control = "aaaxbbbbyyhwawiwjjjwwm"
-printer_error(control) should return "8/22"
+countPrinterErrors(control) should return "8/22"
 
  */
 
