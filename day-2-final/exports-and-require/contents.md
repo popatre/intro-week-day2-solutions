@@ -38,7 +38,7 @@ Eg. The destination file in `challenges/0` should _not_ `require` from a source 
 
 Head over to the `separating-concerns` directory.
 
-The tasks are listed 0 - 4
+The tasks are listed 0 - 5
 
 For each task, there is a `utils` function that has been created which will help you complete the challenge. These can be located in the `utils` folder.
 
