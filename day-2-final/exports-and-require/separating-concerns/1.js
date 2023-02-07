@@ -1,23 +1,60 @@
 const { check, runTest } = require("../../test-api/index.js");
 
 /* 
-Complete the function below. It takes an object with contains the length of three sides of a triangle
-Using the appropriate util function, return the string 'This is a right angled triangle' or 'This is a normal triangle', as appropriate
+The function should take two objects which provide the cost, currency and exchange rate of an item
+Return the total cost of the two items, in pounds, rounded to two decimal places
 
 Example:
-const angles = {sideA: 3, sideB:4, sideC:5}
-checkRightAngledTriangle(angles)
-return 'This is a right angled triangle'
-
-NOTE: You will need to adjust the util function in this example, by requiring in another function to it
+const item1 = {
+    description:'trainers', 
+    cost:50, 
+    currency:'euros',
+    exchangeRate:1.12
+}
+const item2 = {
+    description:'iPhone', 
+    cost:500, 
+    currency:'dollar',
+    exchangeRate:1.20
+}
+sumPurchases(item1, item2)
+ returns
 
 */
 
-function checkRightAngledTriangle(triangleAngles) {}
+function sumPurchases(item1, item2) {}
 
-runTest("isRightAngledTriangle() should return appropriate string message", function () {
-  check(checkRightAngledTriangle({ sideA: 3, sideB: 4, sideC: 5 })).isEqualTo("This is a right angled triangle");
-  check(checkRightAngledTriangle({ sideA: 6, sideB: 8, sideC: 10 })).isEqualTo("This is a right angled triangle");
-  check(checkRightAngledTriangle({ sideA: 1, sideB: 2, sideC: 3 })).isEqualTo("This is a normal triangle");
-  check(checkRightAngledTriangle({ sideA: 5, sideB: 5, sideC: 50 })).isEqualTo("This is a normal triangle");
+runTest("sumPurchases() returns sum total of item conversions", function () {
+  check(
+    sumPurchases(
+      {
+        description: "trainers",
+        cost: 50,
+        currency: "euros",
+        exchangeRate: 1.12,
+      },
+      {
+        description: "iPhone",
+        cost: 500,
+        currency: "dollar",
+        exchangeRate: 1.2,
+      }
+    )
+  ).isEqualTo(461.31);
+  check(
+    sumPurchases(
+      {
+        description: "cat food",
+        cost: 1579.5,
+        currency: "yen",
+        exchangeRate: 157.95,
+      },
+      {
+        description: "cat basket",
+        cost: 70,
+        currency: "swiss franc",
+        exchangeRate: 1.11,
+      }
+    )
+  ).isEqualTo(73.06);
 });
