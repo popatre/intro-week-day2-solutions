@@ -1,4 +1,4 @@
-const { check, runTest, skipTest } = require("../../test-api/index.js");
+const { check, runTest } = require("../../test-api/index.js");
 
 function getLastItem(arr) {
   //Write your function here...
