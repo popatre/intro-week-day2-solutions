@@ -13,7 +13,9 @@ NOTE: You will need to adjust the util function in this example, by requiring in
 
 */
 
-function checkRightAngledTriangle(triangleAngles) {}
+function checkRightAngledTriangle(triangleAngles) {
+  // remember to require in at least 1 util function help you solve this problem!
+}
 
 runTest("isRightAngledTriangle() should return appropriate string message", function () {
   check(checkRightAngledTriangle({ sideA: 3, sideB: 4, sideC: 5 })).isEqualTo("This is a right angled triangle");

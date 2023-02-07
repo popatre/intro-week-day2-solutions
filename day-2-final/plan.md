@@ -38,7 +38,6 @@
   - 2.js **10 mins**
   - 3.js **15 mins**
   - 4.js **25mins**
-
-    - 5.js destructuring - **10 mins**
+  - 5.js destructuring - **10 mins**
 
     refac - **10 mins**

@@ -5,12 +5,16 @@ const { check, runTest } = require("../../test-api/index.js");
 
 The function and tests have already been set up for you to check your util before using it. Remember to export it so it can be used in different modules!
 
-2. Next, complete the function `isArrayTotalEven`. The function takes an array. It should find the total of the array, minus any duplicate values. It should then return a boolean depending on whether the total is even or not.
+2. Next, complete the function `isArrayTotalEven`. The function takes an array. It should find the total of the array, minus any duplicate values. 
+
+It should then return a boolean depending on whether the total is even or not.
 
 -  use appropriate util functions to get the total of the array (with no duplicates), and check whether the total is even 
 */
 
-function isArrayTotalEven(arr) {}
+function isArrayTotalEven(arr) {
+  // remember to require in at least 3 util functions help you solve this problem!
+}
 
 runTest("isArrayTotalEven() returns appropriate boolean for total", function () {
   check(typeof isArrayTotalEven([])).isEqualTo("boolean");

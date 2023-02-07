@@ -12,7 +12,9 @@ HINT: You will need to export multiple functions from the same file
 
  */
 
-function isTotalEven(num1, num2) {}
+function isTotalEven(num1, num2) {
+  // remember to require in at least 2 util functions help you solve this problem!
+}
 
 runTest("isTotalEven() should return appropriate boolean for total ", function () {
   check(typeof isTotalEven()).isEqualTo("boolean");

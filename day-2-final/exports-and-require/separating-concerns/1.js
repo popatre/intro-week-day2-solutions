@@ -22,7 +22,9 @@ sumPurchases(item1, item2)
 
 */
 
-function sumPurchases(item1, item2) {}
+function sumPurchases(item1, item2) {
+  // remember to require in at least 1 util function help you solve this problem!
+}
 
 runTest("sumPurchases() returns sum total of item conversions", function () {
   check(
