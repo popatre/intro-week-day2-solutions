@@ -32,9 +32,13 @@
 - sections 1 - 3 **25 mins**
 
 - separating concerns
+
   - 0.js **5 mins**
   - 1.js **10 mins**
   - 2.js **10 mins**
   - 3.js **15 mins**
     -4.js **25mins**
+
     - 5.js destructuring - **10 mins**
+
+    refac - **10 mins**

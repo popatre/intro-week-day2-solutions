@@ -46,6 +46,8 @@ You will need to export and then require in the correct `utils` function to help
 
 You should not need to change any of the code written for the utils functions themselves - unless specified.
 
+You may need multiple `utils` functions to complete a single task.
+
 ## Refactor
 
 Where appropriate, try refactor any challenge in this section to use object destructuring
