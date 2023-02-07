@@ -23,7 +23,7 @@ printer_error(control) should return "8/22"
 
 function countPrinterErrors(controlStr) {
   let count = 0;
-  for (var i = 0; i < controlStr.length; i++) {
+  for (let i = 0; i < controlStr.length; i++) {
     if (controlStr[i] > "m") {
       count++;
     }
