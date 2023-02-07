@@ -15,7 +15,7 @@ Note: If the number is a multiple of both 3 and 5, only count it once! */
 function findTotalOfMultiples(limit) {
   let sum = 0;
 
-  for (let i = 1; i < limit; i++) {
+  for (let i = 3; i < limit; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
       sum += i;
     }
@@ -29,7 +29,7 @@ runTest("findTotalOfMultiples() return zero for negative numbers", function () {
 runTest("findTotalOfMultiples() returns first multiple of 3", function () {
   check(findTotalOfMultiples(4)).isEqualTo(3);
 });
-runTest("findTotalOfMultiples() returns multiples of three and 5 added together below limit ", function () {
+runTest("findTotalOfMultiples() returns multiples of 3 or 5 added together below limit ", function () {
   check(findTotalOfMultiples(6)).isEqualTo(8);
   check(findTotalOfMultiples(10)).isEqualTo(23);
 });
