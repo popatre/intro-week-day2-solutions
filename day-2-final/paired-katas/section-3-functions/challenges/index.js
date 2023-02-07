@@ -8,18 +8,29 @@ Run this file with Node to run the tests and check your function works correctly
 Take a look at the tests to see what each function should be returning given various arguments.
 When you're ready to move on to the next function replace skipTest with runTest.
 */
-
-// Question 1
+//Question 0
 /*
-modulo()
-
-This function should take two arguments a and b, and return the remainder of the division of a / b
+function double() 
+  This function should return any number doubled
 */
 
-runTest("modulo() returns the correct remainder", function () {
-  check(modulo(10, 2)).isEqualTo(0);
-  check(modulo(119, 10)).isEqualTo(9);
-  check(modulo(50, 6)).isEqualTo(2);
+skipTest("double() can double any number", function () {
+  check(double(11)).isEqualTo(22);
+  check(double(129)).isEqualTo(258);
+  check(double(25)).isEqualTo(50);
+});
+
+//Question 1
+/*
+function multiply() 
+ This function should return the product of two passed numbers
+
+*/
+
+runTest("multiply() can multiply 2 numbers together", function () {
+  check(multiply(10, 42)).isEqualTo(420);
+  check(multiply(3, 5)).isEqualTo(15);
+  check(multiply(-180, 2)).isEqualTo(-360);
 });
 
 // Question 2
@@ -62,27 +73,10 @@ skipTest("capitaliseFirstLetter() capitalises the first letter in a string", fun
 
 // Question 5
 /*
-areValuesEqual()
-
-This function should take two arguments and return true if they are *strictly* equal, and false otherwise
-
-NOTE: you can complete this problem without resorting to if statements!
-*/
-
-skipTest("areValuesEqual() checks if two values are strictly equal", function () {
-  check(areValuesEqual(10, 10)).isEqualTo(true);
-  check(areValuesEqual("hello", "hello")).isEqualTo(true);
-  check(areValuesEqual("good", "bad")).isEqualTo(false);
-  check(areValuesEqual("10", 10)).isEqualTo(false);
-});
-
-// Question 6
-/*
 isFromThe60s()
 
 This function should take a number as an argument representing a year, and return true if that year is in the 1960s and false otherwise
 
-NOTE: you can complete this problem without resorting to if statements!
 */
 
 skipTest("isFromThe60s() checks if a number is within 1960 to 1969 (inclusive)", function () {
@@ -95,21 +89,7 @@ skipTest("isFromThe60s() checks if a number is within 1960 to 1969 (inclusive)",
   check(isFromThe60s(1990)).isEqualTo(false);
 });
 
-// Question 7
-/*
-isEvenLength()
-
-This function should take a string as an argument and return true if its length is even, and false otherwise
-*/
-
-skipTest("isEvenLength() checks if string has even number of characters", function () {
-  check(isEvenLength("hello")).isEqualTo(false);
-  check(isEvenLength("northcoders")).isEqualTo(false);
-  check(isEvenLength("abcd")).isEqualTo(true);
-  check(isEvenLength("even")).isEqualTo(true);
-});
-
-// Question 8
+// Question 6
 /*
 isAbsolutePath()
 
@@ -125,13 +105,12 @@ skipTest("isAbsolutePath() checks if a file path is absolute or relative", funct
   check(isAbsolutePath("./applications/my-awesome-app.js")).isEqualTo(false);
 });
 
-// Question 9
+// Question 7
 /*
 getMiddle()
 
 This function should take a string as an argument and return the middle (or middle two) character(s) of that string
 
-NOTE: you could use the ternary operator for this challenge
 */
 
 skipTest("getMiddle() returns the middle character in a string of odd length", function () {
@@ -144,7 +123,7 @@ skipTest("getMiddle() returns the middle characters in a string of even length",
   check(getMiddle("blob")).isEqualTo("lo");
 });
 
-// Question 10
+// Question 8
 /*
 getCharCode()
 
@@ -164,32 +143,9 @@ skipTest("getCharCode() will return a message stating the ASCII code of a passed
   check(getCharCode("M")).isEqualTo("The ASCII code for M is 77");
 });
 
-// Question 11
-/*
-createPercentage()
+/************  Refactor Challenges *************
 
-This function should take two numbers, a and b, and return a string representing the value of a as a percentage of b
+1. Question 5 - complete this problem without resorting to if statements!
+2. Question 7 - use the ternary operator for this challenge (if you haven't already)
+3. Refactor every function into an ES6 arrow function () => {}
 */
-
-skipTest('createPercentage() creates a percentage string in the form "--%"', function () {
-  check(createPercentage(1, 2)).isEqualTo("50%");
-  check(createPercentage(50, 100)).isEqualTo("50%");
-  check(createPercentage(2, 3)).isEqualTo("67%");
-  check(createPercentage(3, 4)).isEqualTo("75%");
-  check(createPercentage(1, 7)).isEqualTo("14%");
-});
-
-// Question 12
-/*
-extractNumber()
-
-This function should take a string containing a number wrapped in a pair of round brackets  and return said number
-*/
-
-skipTest("extractNumber() should return the number buried inside a string", function () {
-  check(extractNumber("lasjdasasj(123)asljdlajk")).isEqualTo(123);
-  check(extractNumber("qwasdaoyer(44687)iuwyeibasdahgsd")).isEqualTo(44687);
-  check(extractNumber("qwasdasdfsyer(19827)iusdfsdfsd")).isEqualTo(19827);
-  check(extractNumber("qwasdasdfsyer(5601)iusdfsdfsd")).isEqualTo(5601);
-  check(extractNumber("qwasdasdfsyer(29)iusdfsdfsd")).isEqualTo(29);
-});

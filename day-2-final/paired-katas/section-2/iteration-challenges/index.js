@@ -8,15 +8,6 @@ Run this file with Node to run the tests and check your function works correctly
 Take a look at the tests to see what each function should be returning given various arguments.
 When you're ready to move on to the next function replace skipTest with runTest.
 */
-//Question 1
-function makeAllUpperCase(arr) {
-  // This function should take an array of strings as an argument and return an array consisting of the same strings in upper case (retaining the order)
-}
-
-runTest("makeAllUpperCase() can convert all strings to upper case", function () {
-  check(makeAllUpperCase(["a", "b", "c"])).isEqualTo(["A", "B", "C"]);
-  check(makeAllUpperCase(["I", "love", "coding"])).isEqualTo(["I", "LOVE", "CODING"]);
-});
 
 //Question 2
 function collectStrings(arr) {
@@ -26,17 +17,6 @@ function collectStrings(arr) {
 skipTest("collectStrings() can get all the strings from an array", function () {
   check(collectStrings(["a", "b", "c"])).isEqualTo(["a", "b", "c"]);
   check(collectStrings(["a", 10, "b", 1000, "c"])).isEqualTo(["a", "b", "c"]);
-});
-
-//Question 3
-function getEvenNumbers(arr) {
-  // This function should take an array of numbers as an argument and return an array containing all even numbers from the input (retaining the order)
-}
-
-skipTest("getEvenNumbers() can get all the even numbers from an array of numbers", function () {
-  check(getEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).isEqualTo([2, 4, 6, 8, 10]);
-  check(getEvenNumbers([9, 100, 13, 20])).isEqualTo([100, 20]);
-  check(getEvenNumbers([78, 5, 9, 11, 24])).isEqualTo([78, 24]);
 });
 
 //Question 4
@@ -82,21 +62,6 @@ skipTest("deleteManyPasswords() deletes the password property for each user", fu
     ])
   ).isEqualTo([{ name: "Barry" }, { name: "Sandeep" }, { name: "Kavita" }]);
 });
-
-//Question 7
-function collectTheVowels(str) {
-  // This function should take a string as its argument and return a string consisting of all vowels found in the input (retaining the order)
-}
-
-skipTest(
-  "collectTheVowels() takes a string of many letters and returns a string containing those vowels in correct order",
-  function () {
-    check(collectTheVowels("a")).isEqualTo("a");
-    check(collectTheVowels("bcd")).isEqualTo("");
-    check(collectTheVowels("bcdepiaouk")).isEqualTo("eiaou");
-    check(collectTheVowels("hello world")).isEqualTo("eoo");
-  }
-);
 
 //Question 8
 function containsNoRepeats(str) {
