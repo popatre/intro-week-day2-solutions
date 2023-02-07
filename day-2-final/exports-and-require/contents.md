@@ -45,3 +45,7 @@ For each task, there is a `utils` function that has been created which will help
 You will need to export and then require in the correct `utils` function to help you complete the task.
 
 You should not need to change any of the code written for the utils functions themselves - unless specified.
+
+## Refactor
+
+Where appropriate, try refactor any challenge in this section to use object destructuring
