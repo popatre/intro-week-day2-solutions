@@ -28,3 +28,12 @@
   - func challenges - Qs 2, 3, 4, 6, 8, 9, 10 _not used 1, 5, 7, 11, 12_ **35/30 mins**
 
 ## module.exports - 2 hours
+
+- sections 1 - 3 **25 mins**
+
+- separating concerns
+  - 0.js **5 mins**
+  - 1.js **10 mins**
+  - 2.js **10 mins**
+  - 3.js **15 mins**
+    -4.js **25mins**
