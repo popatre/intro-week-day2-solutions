@@ -33,3 +33,15 @@ Head through the `directories` 0-6 in the `challenges` directory. In each direct
 
 One of these files will contain your instructions. A `destination.js` file should only `require` from a source file within its numbered directory.
 Eg. The destination file in `challenges/0` should _not_ `require` from a source file in `challenges/2`
+
+## Section 4
+
+Head over to the `separating-concerns` directory.
+
+The tasks are listed 0- number here
+
+For each task, there is a `utils` function that has been created which will help you complete the challenge. These can be located in the `utils` folder.
+
+You will need to export and then require in the correct `utils` function to help you complete the task.
+
+You should not need to change any of the code written for the utils functions themselves - unless specified.
