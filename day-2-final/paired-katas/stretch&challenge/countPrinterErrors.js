@@ -21,7 +21,15 @@ printer_error(control) should return "8/22"
 
  */
 
-function countPrinterErrors() {}
+function countPrinterErrors(controlStr) {
+  let count = 0;
+  for (var i = 0; i < controlStr.length; i++) {
+    if (controlStr[i] > "m") {
+      count++;
+    }
+  }
+  return `${count}/${controlStr.length}`;
+}
 
 runTest("countPrinterErrors() should return a string", function () {
   check(typeof countPrinterErrors("")).isEqualTo("string");
