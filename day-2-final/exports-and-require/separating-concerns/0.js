@@ -1,4 +1,5 @@
 const { check, runTest } = require("../../test-api/index.js");
+const getArrayTotal = require("./utils/getArrayTotal");
 /*
 The function should take an array
 It should calculate the total of the numbers in the array
@@ -10,8 +11,10 @@ Should then print a string which includes the total
     returns 'The array has a total of 6'
  */
 
-function printTotal(arr) {
+function printArrayTotal(arr) {
   // remember to require in at least 1 util function help you solve this problem!
+  const total = getArrayTotal(arr);
+  return `The array has a total of ${total}`;
 }
 
 runTest("printArrayTotal() returns a string", function () {

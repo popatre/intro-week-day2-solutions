@@ -1,8 +1,9 @@
-const squareNumber = require("./mathFunctions");
+const mathFunctions = require("../utils/mathFunctions");
+// they can refactor later to destructure
 function isRightAngledTriangle(sideA, sideB, sideC) {
-  const sideASquared = "REPLACE ME WITH APPROPRIATE UTIL FUNCTION";
-  const sideBSquared = "REPLACE ME WITH APPROPRIATE UTIL FUNCTION";
-  const sideCSquared = "REPLACE ME WITH APPROPRIATE UTIL FUNCTION";
+  const sideASquared = mathFunctions.squareNumber(sideA);
+  const sideBSquared = mathFunctions.squareNumber(sideB);
+  const sideCSquared = mathFunctions.squareNumber(sideC);
 
   return sideCSquared === sideASquared + sideBSquared;
 }

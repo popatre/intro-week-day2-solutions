@@ -1,8 +1,10 @@
 const { check, runTest } = require("../../../test-api");
 
 function removeDuplicateValues(arr) {
-  //your code here
+  return [...new Set(arr)];
 }
+
+module.exports = removeDuplicateValues;
 
 runTest("removeDuplicateValues() should return an array", function () {
   check(Array.isArray(removeDuplicateValues([]))).isEqualTo(true);
