@@ -11,6 +11,10 @@ When you're ready to move on to the next function replace skipTest with runTest.
 // Exercise 1
 function isBiggerThan10(num) {
   // This function should take a number as an argument, and return an appropriate message based on that number's relationship to the number 10
+
+  if (num < 10) return `Number ${num} is less than 10`;
+  if (num === 10) return `Number ${num} is equal to 10`;
+  return `Number ${num} is more than 10`;
 }
 
 runTest("isBiggerThan10() returns a message indicating if a number is bigger than 10", function () {
@@ -27,9 +31,15 @@ function readTrafficLight(lightColour) {
   // This function should take a string representing a traffic light colour as an argument
   // It will be one of "red", "green" or "amber" in either uppercase or lowercase
   // You should return a corresponding message
+
+  lightColour = lightColour.toUpperCase();
+  if (lightColour === "GREEN") return "GO!";
+  if (lightColour === "AMBER") return "GET READY...";
+  if (lightColour === "RED") return "STOP!";
+  return;
 }
 
-skipTest("readTrafficLight() should print a message according to the different colour passed in", function () {
+runTest("readTrafficLight() should print a message according to the different colour passed in", function () {
   check(readTrafficLight("green")).isEqualTo("GO!");
   check(readTrafficLight("GREEN")).isEqualTo("GO!");
 
@@ -44,9 +54,11 @@ skipTest("readTrafficLight() should print a message according to the different c
 function checkInfinitive(word) {
   // This function should take a string representing a French word as an argument, and return true if it is an infinitive verb, and false otherwise
   // A French infinitive verb is a word that ends with either "re", "ir" or "er"
+
+  return word.endsWith("er") || word.endsWith("re") || word.endsWith("ir");
 }
 
-skipTest("checkInfinitive() checks if a french word is an infinitive", function () {
+runTest("checkInfinitive() checks if a french word is an infinitive", function () {
   check(checkInfinitive("manger")).isEqualTo(true);
   check(checkInfinitive("faire")).isEqualTo(true);
   check(checkInfinitive("aller")).isEqualTo(true);
@@ -68,9 +80,12 @@ function checkGame(diceRoll, coinToss) {
   // A coin toss will be "H" or "T" representing heads or tails
   // The game is considered to be won if the dice roll is 3 or higher AND the coin toss is "H"
   // You should return true if the game has been won, and false otherwise
+
+  if (diceRoll >= 3 && coinToss === "H") return true;
+  return false;
 }
 
-skipTest("checkGame() should check if a user was won the game", function () {
+runTest("checkGame() should check if a user was won the game", function () {
   check(checkGame(3, "H")).isEqualTo(true);
   check(checkGame(4, "H")).isEqualTo(true);
   check(checkGame(5, "H")).isEqualTo(true);
