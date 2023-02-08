@@ -8,7 +8,7 @@ Run this file with Node to run the tests and check your function works correctly
 Take a look at the tests to see what each function should be returning given various arguments.
 When you're ready to move on to the next function replace skipTest with runTest.
 */
-
+// Exercise 1
 function isBiggerThan10(num) {
   // This function should take a number as an argument, and return an appropriate message based on that number's relationship to the number 10
 }
@@ -22,6 +22,7 @@ runTest("isBiggerThan10() returns a message indicating if a number is bigger tha
   check(isBiggerThan10(100)).isEqualTo("Number 100 is more than 10");
 });
 
+// Exercise 2
 function readTrafficLight(lightColour) {
   // This function should take a string representing a traffic light colour as an argument
   // It will be one of "red", "green" or "amber" in either uppercase or lowercase
@@ -39,6 +40,7 @@ skipTest("readTrafficLight() should print a message according to the different c
   check(readTrafficLight("RED")).isEqualTo("STOP!");
 });
 
+// Exercise 3
 function checkInfinitive(word) {
   // This function should take a string representing a French word as an argument, and return true if it is an infinitive verb, and false otherwise
   // A French infinitive verb is a word that ends with either "re", "ir" or "er"
@@ -59,6 +61,7 @@ skipTest("checkInfinitive() checks if a french word is an infinitive", function 
   check(checkInfinitive("allons")).isEqualTo(false);
 });
 
+// Exercise 4
 function checkGame(diceRoll, coinToss) {
   // This function should take a number representing a dice roll and a string repesenting a coin toss as its arguments
   // A dice roll will be a number between 1 and 6

@@ -9,6 +9,7 @@ Take a look at the tests to see what each function should be returning given var
 When you're ready to move on to the next function replace skipTest with runTest.
 */
 
+// Exercise 1
 function checkIfPropertyExists(obj, key) {
   // This function should take an object and a key as its arguments and return true if the input object contains the provided key and false otherwise
 }
@@ -19,6 +20,17 @@ skipTest("checkIfPropertyExists() checks if a property exists inside an object",
   check(checkIfPropertyExists({ name: "jonny", age: 32 }, "pets")).isEqualTo(false);
 });
 
+// Exercise 2
+function getLastItem(arr) {
+  //Write your function here...
+}
+
+skipTest("getLastItem() returns the last item in an array", function () {
+  check(getLastItem(["a", "b", "c", "d"])).isEqualTo("d");
+  check(getLastItem(["apple", "banana", "pear", "kiwi"])).isEqualTo("kiwi");
+});
+
+// Exercise 3
 function createObject(arr) {
   // This function should take an array consisting of two elements representing a key/ value pair as its argument and return an object with a single property based on the input
 }
@@ -29,6 +41,18 @@ skipTest("createObject() creates a new object from a key value pair", function (
   check(createObject(["language", "haskell"])).isEqualTo({ language: "haskell" });
 });
 
+// Exercise 4
+function getLastNItems(arr, n) {
+  // This function should take two arguments, an array and a number n, and return a new array containing the last n items of the given array
+}
+
+skipTest("getLastNItems() returns the last n items in an array", function () {
+  check(getLastNItems(["a", "b", "c", "d"], 2)).isEqualTo(["c", "d"]);
+  check(getLastNItems(["apple", "banana", "pear", "kiwi"], 0)).isEqualTo([]);
+  check(getLastNItems(["apple", "banana", "pear", "kiwi"], 3)).isEqualTo(["banana", "pear", "kiwi"]);
+});
+
+// Exercise 5
 function createArrow(direction) {
   // This function should take a string representing a direction ("left", "right", "up" or "down") as its argument and return the corresponding arrow ("←", "→", "↑", "↓")
   // You don't need to utilise an object here, but think about how you could do so
@@ -41,6 +65,18 @@ skipTest("createArrow() will return an arrow pointing in the right direction", f
   check(createArrow("down")).isEqualTo("↓");
 });
 
+// Exercise 6
+function removeItem(arr, n) {
+  // This function should take two arguments, an array and a number n, and return a new array without the item at index 'n'
+}
+
+skipTest("removeItem() removes an item at a given index", function () {
+  check(removeItem(["a", "b", "c", "d"], 2)).isEqualTo(["a", "b", "d"]);
+  check(removeItem(["a", "b", "c", "d"], 0)).isEqualTo(["b", "c", "d"]);
+  check(removeItem(["a", "b", "c", "d"], 1)).isEqualTo(["a", "c", "d"]);
+});
+
+// Exercise 7
 function updateVoterAddress(voter, correctHouseNumber) {
   /*
   This function should take an object representing a voter's details and a house number as its arguments
@@ -81,4 +117,15 @@ skipTest("updateVoterAddress() updates the voter's houseNumber", function () {
       city: "Chester",
     },
   });
+});
+
+//Exercise 7
+function mergeArrays(arr1, arr2) {
+  // This function should take two arrays as arguments and return a new array containing all of arr1 and arr2's elements (in that order)
+}
+
+skipTest("mergeArrays() will concatenate two arrays together", function () {
+  check(mergeArrays(["a", "b"], ["c", "d"])).isEqualTo(["a", "b", "c", "d"]);
+  check(mergeArrays([1], [3, 5, 7])).isEqualTo([1, 3, 5, 7]);
+  check(mergeArrays(["x", "y", "z"], [1, 2, 3, 4])).isEqualTo(["x", "y", "z", 1, 2, 3, 4]);
 });
