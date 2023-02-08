@@ -10,4 +10,7 @@
 
 // You don't need to use loops for this one! :)
 
-function makeRectangle() {}
+function makeRectangle(x, y) {
+  const line = "* ".repeat(x) + "\n";
+  console.log(line.repeat(y));
+}
